@@ -27,7 +27,7 @@
 	$email=htmlspecialchars($_POST['email']);
  $username=htmlspecialchars($_POST['username']);
  $password=htmlspecialchars($_POST['password']);
- $query=mysql_query("SELECT * FROM regformtb WHEREusername='".$username."'");
+ $query=mysql_query("SELECT * FROM regformtb WHERE username='".$username."'");
   $numrows=mysql_num_rows($query);
 if($numrows==0)
    {
